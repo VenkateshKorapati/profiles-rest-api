@@ -25,7 +25,10 @@ SECRET_KEY = '-nk!ku=^*dz9+iopnx6)zrl5h8z(&zxo+neo(6#gv^=tseh0-2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.het('DEBUG', 1)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ec2-44-201-133-190.compute-1.amazonaws.com',
+    '127.0.0.1'
+ ]
 
 # REST_FRAMEWORK = {
 #     'DEFAULT_RENDERER_CLASSES': [
